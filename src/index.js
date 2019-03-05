@@ -1,12 +1,9 @@
 import express from "express";
-import Sequelize from 'sequelize';
-// const Sequelize = require('sequelize');
+import {sequelize} from "./models/index"
 
 const app = express();
 console.info("DBURL: %s", process.env['DBURL'])
 const asyncHandler = require('express-async-handler')
-
-const sequelize = new Sequelize(process.env['DBURL']);
 
 sequelize
   .authenticate()

@@ -1,6 +1,7 @@
 #!/bin/sh
 
-npm run build
+npm install
+#npm run build
 
 if [ "$NODE_ENV" == "production" ] ; then
   npm run start

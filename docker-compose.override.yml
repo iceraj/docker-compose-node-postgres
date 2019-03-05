@@ -1,8 +1,16 @@
 # docker-compose.override.yml
 version: "3"
 services:
+
   app:
     env_file: .env
     volumes:
       - .:/home/app/
       - /home/app/node_modules
+
+  postgres:
+    volumes:
+      - "dbdata:/var/lib/postgresql/data"
+
+volumes:
+  dbdata:

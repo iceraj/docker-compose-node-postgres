@@ -25,7 +25,9 @@
     "babel-preset-env": "^1.7.0",
     "express": "^4.16.4",
     "express-async-handler": "^1.1.4",
-    "pg-async": "^3.1.0"
+    "pg-async": "^3.1.0",
+    "sequelize": "^4.43.0",
+    "sequelize-cli": "^5.4.0"
   },
   "devDependencies": {
     "babel-register": "^6.26.0",
